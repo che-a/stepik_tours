@@ -6,7 +6,15 @@
 Косметические правки сайта не производились, т.к. это не предусмотрено заданием.
 
 ## Развертывание проекта 
-`git clone https://github.com/che-a/stepik_tours.git`  
-`cd stepik_tours`  
-`python3 -m venv env`  
-`source env/bin/activate`  
+
+```shell
+git clone https://github.com/che-a/stepik_tours.git
+cd stepik_tours
+python -m venv env
+source env/bin/activate
+python -m pip install --upgrade pip setuptools wheel
+python -m pip install -r requirments.txt
+
+# Запуск отладочного веб-сервера
+python manage.py runserver
+```
